@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.textExtraSmall {
+  font-family: var(--text-paragraph);
+  font-size: 0.8rem;
+}
+
+.textSmall {
+  font-family: var(--text-paragraph);
+  font-size: 1rem;
+}
+
+.textMedium {
+  font-family: var(--text-paragraph);
+  font-size: 1.25rem;
+}
+
+.textLarge {
+  font-family: var(--text-header);
+  font-size: 2.2rem;
+}
+
+.textExtraLarge {
+  font-family: var(--text-header);
+  font-size: 2.5rem;
+}
+
+.textExtraExtraLarge {
+  font-family: var(--text-header);
+  font-size: 3.125rem;
+}
