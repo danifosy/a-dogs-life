@@ -1,42 +1,42 @@
 import React from 'react';
-import Typhography from './Typography';
+import Typography from './Typography';
 
 export default {
   title: 'Component/Typography',
-  component: Typhography,
+  component: Typography,
 };
 
 export const ExtraSmall = (): JSX.Element => (
-  <Typhography size="xs">this is very small text</Typhography>
+  <Typography size="xs">this is very small text</Typography>
 );
 
 export const Small = (): JSX.Element => (
-  <Typhography size="s">this is small text</Typhography>
+  <Typography size="s">this is small text</Typography>
 );
 
 export const Medium = (): JSX.Element => (
-  <Typhography size="m">this is regular size text</Typhography>
+  <Typography size="m">this is regular size text</Typography>
 );
 
 export const Large = (): JSX.Element => (
-  <Typhography size="l">this is large text</Typhography>
+  <Typography size="l">this is large text</Typography>
 );
 
 export const ExtraLarge = (): JSX.Element => (
-  <Typhography size="xl">this is very large text</Typhography>
+  <Typography size="xl">this is very large text</Typography>
 );
 
 export const textExtraExtraLarge = (): JSX.Element => (
-  <Typhography size="xxl">this is very very large text</Typhography>
+  <Typography size="xxl">this is very very large text</Typography>
 );
 
 export const All = (): JSX.Element => (
   <>
-    <Typhography size="xs">this is very small text</Typhography>
-    <Typhography size="s">this is small text</Typhography>
-    <Typhography size="m">this is regular size text</Typhography>
-    <Typhography size="l">this is large text</Typhography>
-    <Typhography size="xl">this is very large text</Typhography>
-    <Typhography size="xxl">this is very very large text</Typhography>
+    <Typography size="xs">this is very small text</Typography>
+    <Typography size="s">this is small text</Typography>
+    <Typography size="m">this is regular size text</Typography>
+    <Typography size="l">this is large text</Typography>
+    <Typography size="xl">this is very large text</Typography>
+    <Typography size="xxl">this is very very large text</Typography>
   </>
 );
