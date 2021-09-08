@@ -1,3 +1,7 @@
+.icon {
+  padding-right: 0.75rem;
+}
+
 .submitButton {
   font-family: var(--text-paragraph);
   font-size: 1rem;
