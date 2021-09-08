@@ -1,14 +1,10 @@
-.icon {
-  padding-right: 0.75rem;
-}
-
 .submitButton {
   font-family: var(--text-paragraph);
   font-size: 1rem;
   color: var(--background-color);
   background: var(--action-color);
   border: none;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   text-transform: uppercase;
   border-radius: 0.5rem;
   top: 0;
@@ -16,6 +12,8 @@
   transition: all 0.15s linear 0s;
   box-shadow: 6px 6px 0 #2e4261;
   display: flex;
+  justify-content: space-around;
+  width: 10rem;
 }
 .submitButton:hover {
   top: 3px;
