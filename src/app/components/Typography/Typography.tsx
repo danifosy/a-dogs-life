@@ -7,21 +7,29 @@ type TyphographyProps = {
   children: ReactNode;
 };
 
+const sizeMap = {
+  xs: styles.textExtraSmall,
+  s: styles.textSmall,
+  m: styles.textMedium,
+  l: styles.textLarge,
+  xl: styles.textExtraLarge,
+  xxl: styles.textExtraExtraLarge,
+};
+
 export default function Typography({
   size,
   children,
 }: TyphographyProps): JSX.Element {
-  if (size === 'xs') {
-    return <p className={styles.textExtraSmall}>{children}</p>;
-  } else if (size === 's') {
-    return <p className={styles.textSmall}>{children}</p>;
-  } else if (size === 'm') {
-    return <p className={styles.textMedium}>{children}</p>;
-  } else if (size === 'l') {
-    return <h3 className={styles.textLarge}>{children}</h3>;
-  } else if (size === 'xl') {
-    return <h2 className={styles.textExtraLarge}>{children}</h2>;
-  } else {
-    return <h1 className={styles.textExtraExtraLarge}>{children}</h1>;
+  switch (size) {
+    case 'xs':
+    case 's':
+    case 'm':
+      return <p className={sizeMap[size]}>{children}</p>;
+    case 'l':
+      return <h3 className={sizeMap[size]}>{children}</h3>;
+    case 'xl':
+      return <h2 className={sizeMap[size]}>{children}</h2>;
+    case 'xxl':
+      return <h1 className={sizeMap[size]}>{children}</h1>;
   }
 }
