@@ -7,72 +7,41 @@ export default {
 };
 
 export const Signup = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/Signup.svg" />
-    Anmelden
-  </SubmitButton>
+  <SubmitButton icon="Signup">Anmelden</SubmitButton>
 );
 
 export const Next = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/ArrowRight.svg" />
-    Weiter
-  </SubmitButton>
+  <SubmitButton icon="ArrowRight">Weiter</SubmitButton>
 );
 
 export const Login = (): JSX.Element => (
-  <SubmitButton>
-    {' '}
-    <img src="src/assets/SVGs/Signup.svg" />
-    Einloggen
-  </SubmitButton>
+  <SubmitButton icon="Signup">Einloggen</SubmitButton>
 );
 
 export const Save = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/Safe.svg" />
-    Speichern
-  </SubmitButton>
+  <SubmitButton icon="Safe">Speichern</SubmitButton>
 );
 
 export const DetailSearch = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/Search.svg" />
-    Detailsuche
-  </SubmitButton>
+  <SubmitButton icon="Search">Detailsuche</SubmitButton>
 );
 
 export const Search = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/Search.svg" />
-    Suchen
-  </SubmitButton>
+  <SubmitButton icon="Search">Suchen</SubmitButton>
 );
 
 export const Upload = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/Upload.svg" />
-    Hochladen
-  </SubmitButton>
+  <SubmitButton icon="Upload">Hochladen</SubmitButton>
 );
 
 export const Pictures = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/Camera.svg" />
-    Bilder
-  </SubmitButton>
+  <SubmitButton icon="Camera">Bilder</SubmitButton>
 );
 
 export const Contact = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/Letter.svg" />
-    Kontakt
-  </SubmitButton>
+  <SubmitButton icon="Letter">Kontakt</SubmitButton>
 );
 
 export const Submit = (): JSX.Element => (
-  <SubmitButton>
-    <img src="src/assets/SVGs/Send.svg" />
-    Abschicken
-  </SubmitButton>
+  <SubmitButton icon="Send">Abschicken</SubmitButton>
 );
