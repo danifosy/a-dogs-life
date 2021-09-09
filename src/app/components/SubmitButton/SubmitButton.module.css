@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   transition: all 0.15s linear 0s;
-  box-shadow: 6px 6px 0 #2e4261;
+  box-shadow: 6px 6px 0 var(--shadow-color);
   display: flex;
   justify-content: space-around;
   width: 10rem;
@@ -18,7 +18,7 @@
 .submitButton:hover {
   top: 3px;
   left: 3px;
-  box-shadow: 3px 3px 0 #2e4261;
+  box-shadow: 3px 3px 0 var(--shadow-color);
 }
 
 .submitButton::after {
