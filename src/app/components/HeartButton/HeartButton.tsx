@@ -28,7 +28,7 @@ export default function HeartButton({
   }
   return (
     <button onClick={onButtonClick} className={styles.heartButton}>
-      <HeartIcon />
+      <HeartIcon {...(isActive ? active : inactive)} />
     </button>
   );
 }
