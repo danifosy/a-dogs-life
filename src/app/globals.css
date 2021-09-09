@@ -13,10 +13,14 @@
 @font-face {
   font-family: 'Roboto';
   src: url(src/assets/fonts/Roboto/Roboto-Light.ttf);
-  font-weight: 400;
+  src: url(src/assets/fonts/Roboto/Roboto-Medium.ttf);
+  font-weight: 400, 500;
 }
 
 :root {
   --text-header: 'Raleway', sans-serif;
   --text-paragraph: 'Roboto';
+  --text-color: #80636d;
+  --background-color: #fbfbfb;
+  --action-color: #f06f96;
 }
