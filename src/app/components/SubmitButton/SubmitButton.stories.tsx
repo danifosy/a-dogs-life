@@ -7,41 +7,41 @@ export default {
 };
 
 export const Signup = (): JSX.Element => (
-  <SubmitButton icon="Signup">Anmelden</SubmitButton>
+  <SubmitButton icon="signup">Anmelden</SubmitButton>
 );
 
 export const Next = (): JSX.Element => (
-  <SubmitButton icon="ArrowRight">Weiter</SubmitButton>
+  <SubmitButton icon="arrowRight">Weiter</SubmitButton>
 );
 
 export const Login = (): JSX.Element => (
-  <SubmitButton icon="Signup">Einloggen</SubmitButton>
+  <SubmitButton icon="signup">Einloggen</SubmitButton>
 );
 
 export const Save = (): JSX.Element => (
-  <SubmitButton icon="Safe">Speichern</SubmitButton>
+  <SubmitButton icon="safe">Speichern</SubmitButton>
 );
 
 export const DetailSearch = (): JSX.Element => (
-  <SubmitButton icon="Search">Detailsuche</SubmitButton>
+  <SubmitButton icon="search">Detailsuche</SubmitButton>
 );
 
 export const Search = (): JSX.Element => (
-  <SubmitButton icon="Search">Suchen</SubmitButton>
+  <SubmitButton icon="search">Suchen</SubmitButton>
 );
 
 export const Upload = (): JSX.Element => (
-  <SubmitButton icon="Upload">Hochladen</SubmitButton>
+  <SubmitButton icon="upload">Hochladen</SubmitButton>
 );
 
 export const Pictures = (): JSX.Element => (
-  <SubmitButton icon="Camera">Bilder</SubmitButton>
+  <SubmitButton icon="camera">Bilder</SubmitButton>
 );
 
 export const Contact = (): JSX.Element => (
-  <SubmitButton icon="Letter">Kontakt</SubmitButton>
+  <SubmitButton icon="letter">Kontakt</SubmitButton>
 );
 
 export const Submit = (): JSX.Element => (
-  <SubmitButton icon="Send">Abschicken</SubmitButton>
+  <SubmitButton icon="send">Abschicken</SubmitButton>
 );
