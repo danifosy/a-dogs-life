@@ -5,14 +5,14 @@ import Typography from '../Typography/Typography';
 
 type SubmitButtonProps = {
   icon:
-    | 'ArrowRight'
-    | 'Camera'
-    | 'Letter'
-    | 'Safe'
-    | 'Search'
-    | 'Send'
-    | 'Signup'
-    | 'Upload';
+    | 'arrowRight'
+    | 'camera'
+    | 'letter'
+    | 'safe'
+    | 'search'
+    | 'send'
+    | 'signup'
+    | 'upload';
   children: ReactNode;
 };
 
