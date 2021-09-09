@@ -6,9 +6,6 @@ import type { Story } from '@storybook/react';
 export default {
   title: 'Component/HeartButton',
   component: HeartButton,
-  argTypes: {
-    control: { types: 'select' },
-  },
 };
 
 const Template: Story<HeartButtonProps> = (args) => <HeartButton {...args} />;
