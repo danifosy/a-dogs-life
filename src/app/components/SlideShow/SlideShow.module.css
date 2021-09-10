@@ -1,0 +1,19 @@
+.Slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Slider::-webkit-scrollbar {
+  width: 10em;
+  height: 10em;
+}
+
+.Slider > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 30rem;
+  height: 30rem;
+}
