@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './HeartIcon.module.css';
 
 const HeartIcon = (props: React.SVGProps<SVGSVGElement>): JSX.Element => {
   return (
@@ -6,8 +7,8 @@ const HeartIcon = (props: React.SVGProps<SVGSVGElement>): JSX.Element => {
       width="26"
       height="22"
       viewBox="0 0 26 22"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={styles.icon}
       {...props}
     >
       <path
