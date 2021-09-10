@@ -1,0 +1,7 @@
+.Navigation_ListItem_Text {
+  color: var(--background-color);
+  text-decoration: none;
+  padding-right: 2.5rem;
+  list-style: none;
+  background-color: var(--action-color);
+}
