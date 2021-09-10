@@ -1,0 +1,32 @@
+.icon:hover {
+  fill: var(--action-color);
+}
+
+/* .icon {
+  fill: transparent;
+  stroke: var(--action-color);
+  cursor: pointer;
+}
+
+.icon:checked path {
+  animation: fade-animation 2s ease-in-out forwards;
+}
+
+@keyframes fade-animation {
+  70% {
+    fill: transparent;
+    transform: scale(1);
+  }
+  80% {
+    fill: #fa95b3;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+} */
