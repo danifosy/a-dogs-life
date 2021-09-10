@@ -1,26 +1,16 @@
 import React from 'react';
-import type { ReactNode } from 'react';
 import styles from './ BurgerButtonMenu.module.css';
-import Typography from '../Typography/Typography';
-
-type BurgerButtonMenuProps = {
-  children: ReactNode;
-};
+import Navigation from '../Navigation/Navigation';
+import type { NavigationProps } from '../Navigation/Navigation';
 
 export default function BurgerButtonMenu({
   children,
-}: BurgerButtonMenuProps): JSX.Element {
+}: NavigationProps): JSX.Element {
   return (
     <nav>
       <div className={styles.BurgerButton_Container}>
-        <div id={styles.BurgerButton_overlay}>
-          <ul>
-            <li>
-              <Typography size="l">
-                <a href="">{children}</a>
-              </Typography>
-            </li>
-          </ul>
+        <div className={styles.BurgerButton_Overlay}>
+          <Navigation>{children}</Navigation>
         </div>
       </div>
     </nav>
