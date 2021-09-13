@@ -1,9 +1,0 @@
-.BurgerButton_Container {
-  margin: 0 auto;
-}
-
-.BurgerButton_Overlay {
-  background-color: var(--action-color);
-  display: flex;
-  justify-content: flex-end;
-}

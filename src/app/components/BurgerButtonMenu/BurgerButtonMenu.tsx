@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ BurgerButtonMenu.module.css';
+import styles from './BurgerButtonMenu.module.css';
 import Navigation from '../Navigation/Navigation';
 import type { NavigationProps } from '../Navigation/Navigation';
 
@@ -8,8 +8,8 @@ export default function BurgerButtonMenu({
 }: NavigationProps): JSX.Element {
   return (
     <nav>
-      <div className={styles.BurgerButton_Container}>
-        <div className={styles.BurgerButton_Overlay}>
+      <div className={styles.burgerButton_container}>
+        <div className={styles.burgerButton_overlay}>
           <Navigation>{children}</Navigation>
         </div>
       </div>

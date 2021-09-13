@@ -1,5 +1,5 @@
 import React from 'react';
-import BurgerButtonMenu from './ BurgerButtonMenu';
+import BurgerButtonMenu from './BurgerButtonMenu';
 
 export default {
   title: 'Component/BurgerButtonMenu',
