@@ -1,0 +1,10 @@
+.Navigation_List {
+  list-style: none;
+  padding-right: 2.5rem;
+  background-color: var(--action-color);
+  display: inline-block;
+}
+.Navigation_ListItem_Text {
+  color: var(--background-color);
+  text-decoration: none;
+}
