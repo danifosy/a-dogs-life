@@ -1,5 +1,6 @@
 .Slider {
   display: flex;
+  flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
