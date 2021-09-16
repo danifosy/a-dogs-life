@@ -7,5 +7,5 @@ export default {
 };
 
 export const DogProfileCard = (): JSX.Element => (
-  <DogCard isLiked={true} image="Mino3" />
+  <DogCard isLiked={true} image="src/assets/MockImages/Mino3.png" />
 );
