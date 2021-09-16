@@ -1,9 +1,12 @@
 import React from 'react';
 
 export type ImagesProps = {
-  image: string;
+  imageURL: string;
   className?: string;
 };
-export default function Images({ image, className }: ImagesProps): JSX.Element {
-  return <img src={image} className={className} />;
+export default function Images({
+  imageURL,
+  className,
+}: ImagesProps): JSX.Element {
+  return <img src={imageURL} className={className} />;
 }

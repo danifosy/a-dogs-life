@@ -14,7 +14,7 @@ export default function DogCard({ image, isLiked }: DogCardProps): JSX.Element {
       <div className={styles.heartButton}>
         <HeartButton onButtonClick={() => console.log('')} isActive={isLiked} />
       </div>
-      <Image image={`${image}`} className={styles.image} />
+      <Image imageURL={`${image}`} className={styles.image} />
     </section>
   );
 }
