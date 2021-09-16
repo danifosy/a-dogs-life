@@ -1,6 +1,6 @@
 import React from 'react';
-import BurgerIcon from '../../../../assets/BurgerButtonIcon';
-import XIcon from '../../../../assets/XIcon';
+import BurgerIcon from '../../../assets/BurgerButtonIcon';
+import XIcon from '../../../assets/XIcon';
 import styles from './BurgerButton.module.css';
 
 export type BurgerButtonProps = {
