@@ -12,5 +12,5 @@ const dropDownOptions = [
 ];
 
 export const Breed = (): JSX.Element => (
-  <DropDownMenu options={dropDownOptions}></DropDownMenu>
+  <DropDownMenu options={dropDownOptions} />
 );
