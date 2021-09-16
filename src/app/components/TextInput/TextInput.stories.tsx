@@ -7,9 +7,13 @@ export default {
 };
 
 export const Name = (): JSX.Element => (
-  <TextInput inputType="text">Name</TextInput>
+  <TextInput inputType="text" id="name">
+    Name
+  </TextInput>
 );
 
 export const Password = (): JSX.Element => (
-  <TextInput inputType="password">Passwort</TextInput>
+  <TextInput inputType="password" id="password">
+    Passwort
+  </TextInput>
 );
