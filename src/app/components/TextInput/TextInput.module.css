@@ -1,0 +1,40 @@
+.inputField {
+  position: relative;
+  line-height: 2rem;
+  width: 15rem;
+  height: 2em;
+}
+
+.labelContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--shadow-color);
+  transition: 0.3s all;
+  cursor: text;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 0.15rem solid var(--shadow-color);
+  box-shadow: none;
+  transition: 0.3s ease;
+  font-family: var(--text-paragraph);
+  font-size: 0.95rem;
+}
+
+.input:invalid {
+  outline: 0;
+}
+
+.input:focus,
+.input:valid {
+  border-color: var(--action-color);
+}
+
+.input:focus + .label .labelContent {
+  transform: translateY(-90%);
+  transition: 0.3s ease;
+  color: var(--action-color);
+}
