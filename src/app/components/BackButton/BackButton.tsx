@@ -1,6 +1,6 @@
 import React from 'react';
 import BackIcon from '../../../assets/BackIcon';
-import styles from './Backbutton.module.css';
+import styles from './BackButton.module.css';
 
 export default function BackButton(): JSX.Element {
   return (
