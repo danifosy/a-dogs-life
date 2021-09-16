@@ -1,0 +1,15 @@
+.card {
+  width: 10rem;
+  position: relative;
+}
+
+.heartButton {
+  position: absolute;
+  right: 0.3rem;
+  top: 0.3rem;
+}
+
+.image {
+  width: 10rem;
+  border-radius: 1rem;
+}
