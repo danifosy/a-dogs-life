@@ -16,7 +16,7 @@ export default function DropDownMenu({
 }: DropDownMenuProps): JSX.Element {
   return (
     <select className={styles.dropDown}>
-      <DropDownItem value=""> </DropDownItem>
+      <DropDownItem value="Rasse auswählen..."> </DropDownItem>
       {options.map((option) => (
         <DropDownItem value={option.value}>{option.displayText}</DropDownItem>
       ))}
