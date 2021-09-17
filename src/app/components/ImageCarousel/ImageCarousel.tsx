@@ -6,17 +6,18 @@ import styles from './ImageCarousel.styles.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 type imageCarouselProps = {
-  image: string[];
   showArrows: boolean;
+  image: string[];
 };
 
 export default function ImageCarousel({
+  showArrows,
   image,
 }: imageCarouselProps): JSX.Element {
   return (
-    <Carousel showArrows={true}>
-      {image.map((imgURL) => (
-        <Image imageURL={imgURL} />
+    <Carousel showArrows={showArrows}>
+      {image.map((URL) => (
+        <Image imageURL={URL} />
       ))}
     </Carousel>
   );
