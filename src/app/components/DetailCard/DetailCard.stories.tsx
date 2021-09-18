@@ -7,5 +7,13 @@ export default {
 };
 
 export const DogDetails = (): JSX.Element => {
-  return <DetailCard>Hi, ich bin Mino</DetailCard>;
+  return (
+    <DetailCard
+      name="Hallo, ich bin Mino!"
+      breed="Golden Retriever"
+      age="10 Jahre"
+      weight="40kg"
+      textfield="Mino ist lebhaft, freundlich und spielt gerne. Als Retriever schwimmt er natürlich für sein Leben gerne und möchte gerne morgens lange kuscheln. Er wurde 2x gebissen und verträgt sich deswegen nicht mit allen Rüden. Leinenführung ist schwierig, daher nicht als Stadthund geeignet."
+    />
+  );
 };
