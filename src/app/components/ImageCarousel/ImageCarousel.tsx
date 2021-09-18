@@ -15,8 +15,8 @@ export default function ImageCarousel({
 }: imageCarouselProps): JSX.Element {
   return (
     <Carousel showArrows={showArrows}>
-      {image.map((URL) => (
-        <Image imageURL={URL} />
+      {image.map((url) => (
+        <Image imageURL={url} />
       ))}
     </Carousel>
   );
