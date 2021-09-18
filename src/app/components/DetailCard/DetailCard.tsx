@@ -21,25 +21,35 @@ export default function DetailCard({
 }: DetailCardProps): JSX.Element {
   return (
     <section className={styles.container}>
-      <HeartButton onButtonClick={() => console.log('')} isActive={true} />
+      <HeartButton
+        onButtonClick={() => console.log('')}
+        isActive={true}
+        className={styles.heartIcon}
+      />
+      <img
+        src="src/app/assets/SVGs/genderMale.svg"
+        className={styles.genderIcon}
+      />
       <p className={styles.dogName}>
         <Typography size="m">{name}</Typography>
       </p>
       <ul className={styles.attributList}>
         <li className={styles.attributListItem}>
-          <Typography size="s">{breed}</Typography>
+          <Typography size="xs">{breed}</Typography>
         </li>
         <li className={styles.attributListItem}>
-          <Typography size="s">{age}</Typography>
+          <Typography size="xs">{age}</Typography>
         </li>
         <li className={styles.attributListItem}>
-          <Typography size="s">{weight}</Typography>
+          <Typography size="xs">{weight}</Typography>
         </li>
       </ul>
       <p className={styles.description}>
-        <Typography size="m">{textfield}</Typography>
+        <Typography size="s">{textfield}</Typography>
       </p>
-      <SubmitButton icon="letter">Kontakt</SubmitButton>
+      <div className={styles.button}>
+        <SubmitButton icon="letter">Kontakt</SubmitButton>
+      </div>
     </section>
   );
 }
