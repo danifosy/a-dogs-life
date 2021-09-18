@@ -1,5 +1,4 @@
 import React from 'react';
-import type { ReactNode } from 'react';
 import styles from './DetailCard.module.css';
 import HeartButton from '../HeartButton/HeartButton';
 import Typography from '../Typography/Typography';
@@ -23,21 +22,21 @@ export default function DetailCard({
   return (
     <section className={styles.container}>
       <HeartButton onButtonClick={() => console.log('')} isActive={true} />
-      <p>
+      <p className={styles.dogName}>
         <Typography size="m">{name}</Typography>
       </p>
-      <ul>
-        <li>
+      <ul className={styles.attributList}>
+        <li className={styles.attributListItem}>
           <Typography size="s">{breed}</Typography>
         </li>
-        <li>
+        <li className={styles.attributListItem}>
           <Typography size="s">{age}</Typography>
         </li>
-        <li>
+        <li className={styles.attributListItem}>
           <Typography size="s">{weight}</Typography>
         </li>
       </ul>
-      <p>
+      <p className={styles.description}>
         <Typography size="m">{textfield}</Typography>
       </p>
       <SubmitButton icon="letter">Kontakt</SubmitButton>
