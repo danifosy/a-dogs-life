@@ -6,4 +6,5 @@
   background-color: var(--action-color);
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 2rem;
 }
