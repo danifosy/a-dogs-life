@@ -1,0 +1,9 @@
+.carousel {
+  height: fit-content;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
