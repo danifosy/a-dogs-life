@@ -22,7 +22,7 @@
 .dogName {
   align-self: flex-start;
   margin-left: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .attributList {
@@ -32,7 +32,7 @@
 
 .attributListItem {
   align-items: center;
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
   width: 5rem;
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@
 }
 
 .description {
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   padding: 1rem;
   border: solid 0.2rem #e6d8d8;
   border-radius: 0.5rem;
@@ -53,5 +53,5 @@
 
 .button {
   align-self: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
