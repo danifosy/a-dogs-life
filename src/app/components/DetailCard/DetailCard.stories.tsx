@@ -13,7 +13,7 @@ export const DogDetails = (): JSX.Element => {
       breed="Golden Retriever"
       age="10 Jahre"
       weight="40kg"
-      textfield="Mino ist lebhaft, freundlich und spielt gerne. Als Retriever schwimmt er natürlich für sein Leben gerne und möchte gerne morgens lange kuscheln. Er wurde 2x gebissen und verträgt sich deswegen nicht mit allen Rüden. Leinenführung ist schwierig, daher nicht als Stadthund geeignet."
+      description="Mino ist lebhaft, freundlich und spielt gerne. Als Retriever schwimmt er natürlich für sein Leben gerne und möchte gerne morgens lange kuscheln. Er wurde 2x gebissen und verträgt sich deswegen nicht mit allen Rüden. Leinenführung ist schwierig, daher nicht als Stadthund geeignet."
     />
   );
 };

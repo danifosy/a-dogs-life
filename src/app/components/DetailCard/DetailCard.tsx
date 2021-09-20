@@ -9,7 +9,7 @@ type DetailCardProps = {
   breed: string;
   age: string;
   weight: string;
-  textfield: string;
+  description: string;
 };
 
 export default function DetailCard({
@@ -17,7 +17,7 @@ export default function DetailCard({
   breed,
   age,
   weight,
-  textfield,
+  description,
 }: DetailCardProps): JSX.Element {
   return (
     <section className={styles.container}>
@@ -45,7 +45,7 @@ export default function DetailCard({
         </li>
       </ul>
       <p className={styles.description}>
-        <Typography size="s">{textfield}</Typography>
+        <Typography size="s">{description}</Typography>
       </p>
       <div className={styles.button}>
         <SubmitButton icon="letter">Kontakt</SubmitButton>
