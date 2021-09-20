@@ -5,8 +5,10 @@ import styles from './BurgerMenu.module.css';
 
 export default function BurgerMenu(): JSX.Element {
   return (
-    <div className={styles.BurgerMenu}>
-      <BurgerButton isActive={true} />
+    <div className={styles.burgerMenu}>
+      <div className={styles.burgerButton}>
+        <BurgerButton isActive={true} />
+      </div>
       <BurgerButtonMenu>Home</BurgerButtonMenu>
       <BurgerButtonMenu>Suche</BurgerButtonMenu>
       <BurgerButtonMenu>Favoriten</BurgerButtonMenu>
