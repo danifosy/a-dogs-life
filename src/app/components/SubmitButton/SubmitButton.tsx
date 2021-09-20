@@ -22,7 +22,7 @@ export default function SubmitButton({
 }: SubmitButtonProps): JSX.Element {
   return (
     <button className={styles.submitButton}>
-      <img src={`src/assets/SVGs/${icon}.svg`} className={styles.icon} />
+      <img src={`src/app/assets/SVGs/${icon}.svg`} className={styles.icon} />
       <Typography size="s">{children}</Typography>
     </button>
   );
