@@ -5,11 +5,13 @@ import styles from './HeartButton.module.css';
 export type HeartButtonProps = {
   onButtonClick: () => void;
   isActive: boolean;
+  className?: string;
 };
 
 export default function HeartButton({
   isActive,
   onButtonClick,
+  className,
 }: HeartButtonProps): JSX.Element {
   const activeStyles = {
     fill: 'var(--action-color)',
@@ -23,7 +25,10 @@ export default function HeartButton({
 
   return (
     <button onClick={onButtonClick} className={styles.heartButton}>
-      <HeartIcon {...(isActive ? activeStyles : inactiveStyles)} />
+      <HeartIcon
+        {...(isActive ? activeStyles : inactiveStyles)}
+        className={className}
+      />
     </button>
   );
 }

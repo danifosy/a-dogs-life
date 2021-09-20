@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  border-radius: 1rem 1rem 0 0;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.heartIcon {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.genderIcon {
+  width: 1rem;
+  align-self: flex-end;
+  margin-right: 1rem;
+}
+
+.dogName {
+  align-self: flex-start;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.attributList {
+  display: flex;
+  list-style: none;
+}
+
+.attributListItem {
+  align-items: center;
+  margin-right: 0.5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+
+  /* add box shadow maybe */
+
+  border: solid 0.2rem #e6d8d8;
+  border-radius: 0.4rem;
+  padding: 1rem;
+}
+
+.description {
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 0.2rem #e6d8d8;
+  border-radius: 0.5rem;
+}
+
+.button {
+  align-self: center;
+  margin-bottom: 1.5rem;
+}
