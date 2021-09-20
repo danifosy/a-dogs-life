@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import styles from './App.module.css';
+import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import BurgerMenu from './pages/BurgerMenu/BurgerMenu';
 
