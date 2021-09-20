@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Raleway';
   src: url(src/assets/fonts/Raleway/static/Raleway-Medium.ttf);
