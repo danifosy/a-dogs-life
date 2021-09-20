@@ -16,7 +16,7 @@ body {
   background-size: inherit;
   height: 100vh;
   background-color: var(--background-color);
-  opacity: 80%;
+  color: var(--text-color);
 }
 
 @font-face {
