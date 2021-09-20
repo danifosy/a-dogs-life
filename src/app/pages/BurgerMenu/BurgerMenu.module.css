@@ -1,0 +1,17 @@
+.burgerMenu {
+  background-color: var(--action-color);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+}
+
+.burgerButton {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1;
+}
