@@ -1,15 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Switch } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import BurgerMenu from './pages/BurgerMenu/BurgerMenu';
-import styles from './App.module.css';
+import DetailDogCard from './pages/DetailDogCard/DetailDogCard';
 
 function App(): JSX.Element {
   return (
     <>
       <BurgerMenu />
       <BrowserRouter>
-        <main className={styles.appBackground}></main>
-        <Switch></Switch>
+        <Switch>
+          <Route path="/detailcard">
+            <DetailDogCard />
+          </Route>
+        </Switch>
       </BrowserRouter>
     </>
   );

@@ -1,13 +1,3 @@
-.appBackground {
-  background-image: url(./assets/BackgroundShapes/BGblue.png),
-    url(./assets/BackgroundShapes/BGpink.png),
-    url(./assets/BackgroundShapes/BGyellow1.png),
-    url(./assets/BackgroundShapes/BGyellow2.png);
-  background-position: bottom 0 left 0, top 0 right 0, top 0 left 0,
-    bottom 0 right 0;
-  background-repeat: no-repeat;
-  background-size: inherit;
-  height: 100vh;
-  background-color: var(--background-color);
-  opacity: 80%;
+p {
+  text-align: unset;
 }
