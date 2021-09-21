@@ -2,6 +2,7 @@ main {
   display: grid;
   height: 100vh;
   align-content: space-evenly;
+  color: var(--text-color);
 }
 
 h2 {
@@ -10,7 +11,7 @@ h2 {
 }
 
 .contactForm {
-  height: 70vh;
+  height: 80vh;
   display: grid;
   grid-area: 1/1;
   align-content: space-evenly;
@@ -18,13 +19,31 @@ h2 {
 }
 
 .message {
-  height: 12rem;
+  height: 15rem;
   font-family: var(--text-paragraph);
-  color: var(--shadow-color);
+  color: var(--text-color);
   border: none;
-  border-bottom: 2px solid var(--shadow-color);
+  border-bottom: 0.17rem solid var(--shadow-color);
   width: 90%;
   text-decoration: none;
+  outline: 0;
+  font-size: 1rem;
+}
+
+.message:hover {
+  border-bottom: solid 0.17rem var(--action-color);
+}
+
+.message:focus-within {
+  border-bottom: solid 0.17rem var(--action-color);
+}
+
+::placeholder {
+  color: var(--shadow-color);
+}
+
+.message:focus::placeholder {
+  color: transparent;
 }
 
 .button {
