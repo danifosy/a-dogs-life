@@ -5,17 +5,15 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 type imageCarouselProps = {
   showArrows: boolean;
-  dynamicHeight: boolean;
   image: string[];
 };
 
 export default function ImageCarousel({
   showArrows,
   image,
-  dynamicHeight,
 }: imageCarouselProps): JSX.Element {
   return (
-    <Carousel showArrows={showArrows} dynamicHeight={dynamicHeight}>
+    <Carousel showArrows={showArrows}>
       {image.map((url) => (
         <Image imageURL={url} />
       ))}

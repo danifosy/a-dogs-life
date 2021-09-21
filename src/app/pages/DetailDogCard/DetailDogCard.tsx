@@ -12,11 +12,7 @@ export default function DetailDogCard(): JSX.Element {
   return (
     <main className={styles.card}>
       <div className={styles.carousel}>
-        <ImageCarousel
-          image={MockImageGallery}
-          showArrows={true}
-          dynamicHeight={true}
-        />
+        <ImageCarousel image={MockImageGallery} showArrows={true} />
       </div>
       <div className={styles.info}>
         <DetailCard
