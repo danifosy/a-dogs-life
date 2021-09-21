@@ -8,9 +8,9 @@ Typography;
 export default function ContactForm(): JSX.Element {
   return (
     <main>
-      <h2>
+      {/* <h2>
         <Typography size="l">Kontaktanfrage</Typography>
-      </h2>
+      </h2> */}
       <form className={styles.contactForm}>
         <TextInput inputType="text" id="Vor-und-nachname">
           Vor- und Nachname
@@ -18,7 +18,10 @@ export default function ContactForm(): JSX.Element {
         <TextInput inputType="text" id="email">
           E-Mail Adresse
         </TextInput>
-        <textarea className={styles.message}>Deine Nachricht</textarea>
+        <textarea
+          className={styles.message}
+          placeholder="Deine Nachricht"
+        ></textarea>
         <div className={styles.button}>
           <SubmitButton icon="send">Abschicken</SubmitButton>
         </div>
