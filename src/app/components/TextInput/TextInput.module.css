@@ -1,8 +1,8 @@
 .inputField {
   position: relative;
   line-height: 2rem;
-  width: 15rem;
-  height: 2em;
+  width: 20rem;
+  height: 3em;
 }
 
 .labelContent {
@@ -21,7 +21,8 @@
   box-shadow: none;
   transition: 0.3s ease;
   font-family: var(--text-paragraph);
-  font-size: 0.95rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
 }
 
 .input:invalid {
