@@ -17,7 +17,7 @@ export default function Navigation({
       <ul className={styles.Navigation_List}>
         <li className={styles.Navigation_ListItem}>
           <Typography size="l">
-            <a href={`${link}`} className={styles.Navigation_ListItem_Text}>
+            <a href={link} className={styles.Navigation_ListItem_Text}>
               {children}
             </a>
           </Typography>
