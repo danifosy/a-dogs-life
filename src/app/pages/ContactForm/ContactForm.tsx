@@ -2,8 +2,6 @@ import React from 'react';
 import TextInput from '../../components/TextInput/TextInput';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import styles from './ContactForm.module.css';
-import Typography from '../../components/Typography/Typography';
-Typography;
 
 export default function ContactForm(): JSX.Element {
   return (
@@ -12,7 +10,7 @@ export default function ContactForm(): JSX.Element {
         <Typography size="l">Kontaktanfrage</Typography>
       </h2> */}
       <form className={styles.contactForm}>
-        <TextInput inputType="text" id="Vor-und-nachname">
+        <TextInput inputType="text" id="name">
           Vor- und Nachname
         </TextInput>
         <TextInput inputType="text" id="email">

@@ -14,6 +14,7 @@ function App(): JSX.Element {
             <ContactForm />
           </Route>
         </Switch>
+
         <Switch>
           <Route path="/detailcard">
             <DetailDogCard />
