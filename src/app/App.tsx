@@ -14,15 +14,11 @@ function App(): JSX.Element {
           <Route path="/contact">
             <ContactForm />
           </Route>
-        </Switch>
 
-        <Switch>
           <Route path="/settings">
             <SettingsForm />
           </Route>
-        </Switch>
 
-        <Switch>
           <Route path="/detailcard">
             <DetailDogCard />
           </Route>
