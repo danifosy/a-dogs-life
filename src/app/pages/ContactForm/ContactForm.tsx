@@ -2,14 +2,15 @@ import React from 'react';
 import TextInput from '../../components/TextInput/TextInput';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import styles from './ContactForm.module.css';
+import Typography from '../../components/Typography/Typography';
 
 export default function ContactForm(): JSX.Element {
   return (
     <main>
-      {/* <h2>
-        <Typography size="l">Kontaktanfrage</Typography>
-      </h2> */}
       <form className={styles.contactForm}>
+        <h2>
+          <Typography size="l">Kontaktanfrage</Typography>
+        </h2>
         <TextInput inputType="text" id="name">
           Vor- und Nachname
         </TextInput>
