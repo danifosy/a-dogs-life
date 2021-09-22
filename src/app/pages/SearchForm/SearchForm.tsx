@@ -13,16 +13,16 @@ export default function SearchForm(): JSX.Element {
           <Typography size="l">Suche</Typography>
         </h2>
         <div className={styles.sex}>
-          <Checkbox>Rüde</Checkbox>
-          <Checkbox>Hündin</Checkbox>
-          <Checkbox>beides</Checkbox>
+          <Checkbox checked={true}>Rüde</Checkbox>
+          <Checkbox checked={true}>Hündin</Checkbox>
+          <Checkbox checked={true}>beides</Checkbox>
         </div>
         <div className={styles.neutered}>
           <p>
             <Typography size="s">kastriert</Typography>
           </p>
-          <Checkbox>ja</Checkbox>
-          <Checkbox>nein</Checkbox>
+          <Checkbox checked={true}>ja</Checkbox>
+          <Checkbox checked={true}>nein</Checkbox>
         </div>
         <p>
           <Typography size="m">Gewicht</Typography>
@@ -37,10 +37,10 @@ export default function SearchForm(): JSX.Element {
             <Typography size="m">Verträgt sich mit:</Typography>
           </p>
           <div className={styles.tolerateCheckboxes}>
-            <Checkbox>Rüde</Checkbox>
-            <Checkbox>Hündin</Checkbox>
-            <Checkbox>Katzen</Checkbox>
-            <Checkbox>Kindern</Checkbox>
+            <Checkbox checked={true}>Rüde</Checkbox>
+            <Checkbox checked={true}>Hündin</Checkbox>
+            <Checkbox checked={true}>Katzen</Checkbox>
+            <Checkbox checked={true}>Kindern</Checkbox>
           </div>
         </div>
         <SubmitButton icon="search">Suchen</SubmitButton>
