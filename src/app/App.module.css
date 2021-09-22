@@ -1,3 +1,4 @@
-p {
-  text-align: unset;
+.backButton {
+  border: none;
+  background: transparent;
 }
