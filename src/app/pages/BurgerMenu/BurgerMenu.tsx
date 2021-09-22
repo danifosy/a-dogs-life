@@ -20,7 +20,7 @@ export default function BurgerMenu(): JSX.Element {
           <BurgerButtonMenu>Home</BurgerButtonMenu>
           <BurgerButtonMenu>Suche</BurgerButtonMenu>
           <BurgerButtonMenu>Favoriten</BurgerButtonMenu>
-          <BurgerButtonMenu>Einstellungen</BurgerButtonMenu>
+          <BurgerButtonMenu link="/settings">Einstellungen</BurgerButtonMenu>
         </div>
       )}
     </>
