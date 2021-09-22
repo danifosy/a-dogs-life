@@ -4,16 +4,20 @@ import styles from './Navigation.module.css';
 import Typography from '../Typography/Typography';
 
 export type NavigationProps = {
+  link?: string;
   children: ReactNode;
 };
 
-export default function Navigation({ children }: NavigationProps): JSX.Element {
+export default function Navigation({
+  link,
+  children,
+}: NavigationProps): JSX.Element {
   return (
     <>
       <ul className={styles.Navigation_List}>
         <li className={styles.Navigation_ListItem}>
           <Typography size="l">
-            <a href="" className={styles.Navigation_ListItem_Text}>
+            <a href={`${link}`} className={styles.Navigation_ListItem_Text}>
               {children}
             </a>
           </Typography>
