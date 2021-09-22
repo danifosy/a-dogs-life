@@ -27,7 +27,6 @@
 .tolerateCheckboxes {
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
   row-gap: 0.5rem;
 }
