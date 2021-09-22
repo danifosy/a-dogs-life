@@ -1,0 +1,51 @@
+main {
+  display: grid;
+  height: 100vh;
+  align-content: space-evenly;
+  color: var(--text-color);
+}
+
+h2 {
+  grid-area: 1/1;
+  text-align: center;
+}
+
+.contactForm {
+  height: 80vh;
+  display: grid;
+  grid-area: 1/1;
+  align-content: space-evenly;
+  justify-items: center;
+}
+
+.message {
+  height: 15rem;
+  font-family: var(--text-paragraph);
+  color: var(--text-color);
+  border: none;
+  border-bottom: 0.17rem solid var(--shadow-color);
+  width: 90%;
+  text-decoration: none;
+  outline: 0;
+  font-size: 1rem;
+}
+
+.message:hover {
+  border-bottom: solid 0.17rem var(--action-color);
+}
+
+.message:focus-within {
+  border-bottom: solid 0.17rem var(--action-color);
+}
+
+::placeholder {
+  color: var(--shadow-color);
+}
+
+.message:focus::placeholder {
+  color: transparent;
+}
+
+.button {
+  grid-area: 4/1;
+}
