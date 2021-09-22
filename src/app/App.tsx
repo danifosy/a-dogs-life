@@ -4,6 +4,7 @@ import BurgerMenu from './pages/BurgerMenu/BurgerMenu';
 import DetailDogCard from './pages/DetailDogCard/DetailDogCard';
 import ContactForm from './pages/ContactForm/ContactForm';
 import SettingsForm from './pages/SettingsForm/SettingsForm';
+import SearchForm from './pages/SearchForm/SearchForm';
 
 function App(): JSX.Element {
   return (
@@ -17,6 +18,10 @@ function App(): JSX.Element {
 
           <Route path="/settings">
             <SettingsForm />
+          </Route>
+
+          <Route path="/search">
+            <SearchForm />
           </Route>
 
           <Route path="/detailcard">
