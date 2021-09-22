@@ -3,6 +3,7 @@ import styles from './DetailCard.module.css';
 import HeartButton from '../HeartButton/HeartButton';
 import Typography from '../Typography/Typography';
 import SubmitButton from '../SubmitButton/SubmitButton';
+import { Link } from 'react-router-dom';
 
 type DetailCardProps = {
   name: string;
@@ -47,9 +48,9 @@ export default function DetailCard({
       <p className={styles.description}>
         <Typography size="s">{description}</Typography>
       </p>
-      <div className={styles.button}>
+      <Link to="/contact" className={styles.button}>
         <SubmitButton icon="letter">Kontakt</SubmitButton>
-      </div>
+      </Link>
     </section>
   );
 }
