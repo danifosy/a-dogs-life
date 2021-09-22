@@ -4,13 +4,14 @@ import Navigation from '../Navigation/Navigation';
 import type { NavigationProps } from '../Navigation/Navigation';
 
 export default function BurgerButtonMenu({
+  link,
   children,
 }: NavigationProps): JSX.Element {
   return (
     <nav>
       <div className={styles.burgerButton_container}>
         <div className={styles.burgerButton_overlay}>
-          <Navigation>{children}</Navigation>
+          <Navigation link={link}>{children}</Navigation>
         </div>
       </div>
     </nav>
