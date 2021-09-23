@@ -6,18 +6,13 @@ import ContactForm from './pages/ContactForm/ContactForm';
 import SettingsForm from './pages/SettingsForm/SettingsForm';
 import SearchForm from './pages/SearchForm/SearchForm';
 import BackButton from './components/BackButton/BackButton';
-import styles from './App.module.css';
 
 function App(): JSX.Element {
-  function goBack() {
-    history.back();
-  }
   return (
     <>
       <BurgerMenu />
-      <button type="button" onClick={goBack} className={styles.backButton}>
-        <BackButton />
-      </button>
+      <BackButton />
+
       <BrowserRouter>
         <Switch>
           <Route path="/contact">
