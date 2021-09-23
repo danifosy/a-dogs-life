@@ -5,11 +5,14 @@ import DetailDogCard from './pages/DetailDogCard/DetailDogCard';
 import ContactForm from './pages/ContactForm/ContactForm';
 import SettingsForm from './pages/SettingsForm/SettingsForm';
 import SearchForm from './pages/SearchForm/SearchForm';
+import BackButton from './components/BackButton/BackButton';
 
 function App(): JSX.Element {
   return (
     <>
       <BurgerMenu />
+      <BackButton />
+
       <BrowserRouter>
         <Switch>
           <Route path="/contact">
