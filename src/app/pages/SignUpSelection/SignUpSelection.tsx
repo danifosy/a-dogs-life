@@ -21,7 +21,9 @@ export default function SignUpSelection(): JSX.Element {
         <input type="checkbox" className={styles.checkbox} />
         <Typography size="s">Interessent</Typography>
       </label>
-      <SubmitButton icon="arrowRight">Weiter</SubmitButton>
+      <Link to="/signup" className={styles.button}>
+        <SubmitButton icon="arrowRight">Weiter</SubmitButton>
+      </Link>
       <Link to="/" className={styles.loginText}>
         <p>
           <Typography size="s">
