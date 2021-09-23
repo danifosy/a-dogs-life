@@ -1,0 +1,11 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.5rem;
+  align-items: center;
+}
+
+.button {
+  text-decoration: none;
+}
