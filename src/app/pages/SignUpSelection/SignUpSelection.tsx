@@ -1,25 +1,32 @@
 import React from 'react';
 import Typography from '../../components/Typography/Typography';
-import Checkbox from '../../components/Checkbox/Checkbox';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import { Link } from 'react-router-dom';
+import styles from './SignUpSelection.module.css';
 
 export default function SignUpSelection(): JSX.Element {
   return (
-    <main>
+    <main className={styles.selection}>
       <h2>
         <Typography size="l">Anmeldung</Typography>
       </h2>
       <p>
         <Typography size="m">Ich melde mich an als</Typography>
       </p>
-      <Checkbox>Tierschützer*in</Checkbox>
-      <Checkbox>Interessent</Checkbox>
+      <label className={styles.label}>
+        <input type="checkbox" className={styles.checkbox} />
+        <Typography size="s">Tierschützer*in</Typography>
+      </label>
+      <label className={styles.label}>
+        <input type="checkbox" className={styles.checkbox} />
+        <Typography size="s">Interessent</Typography>
+      </label>
       <SubmitButton icon="arrowRight">Weiter</SubmitButton>
-      <Link to="/">
+      <Link to="/" className={styles.loginText}>
         <p>
           <Typography size="s">
-            hast du bereits einen Account? Hier geht's zum Login
+            Hast du bereits einen Account? <br />
+            Hier geht's zum Login.
           </Typography>
         </p>
       </Link>
