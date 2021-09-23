@@ -7,6 +7,7 @@ import SettingsForm from './pages/SettingsForm/SettingsForm';
 import SearchForm from './pages/SearchForm/SearchForm';
 import BackButton from './components/BackButton/BackButton';
 import SignUpSelection from './pages/SignUpSelection/SignUpSelection';
+import SignUpPage from './pages/SignUpPage/SignUpPage';
 
 function App(): JSX.Element {
   return (
@@ -30,6 +31,10 @@ function App(): JSX.Element {
 
           <Route path="/detailcard">
             <DetailDogCard />
+          </Route>
+
+          <Route path="/signup">
+            <SignUpPage />
           </Route>
 
           <Route path="/signupselection">
