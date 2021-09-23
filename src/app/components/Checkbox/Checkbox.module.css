@@ -5,6 +5,7 @@
   width: 5.5rem;
   border-radius: 1rem;
   padding: 0.3rem;
+  padding-right: 0.5rem;
   cursor: pointer;
   transition: 0.3s;
   color: var(--background-color);
