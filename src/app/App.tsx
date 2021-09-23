@@ -7,6 +7,7 @@ import SettingsForm from './pages/SettingsForm/SettingsForm';
 import SearchForm from './pages/SearchForm/SearchForm';
 import BackButton from './components/BackButton/BackButton';
 import styles from './App.module.css';
+import SignUpSelection from './pages/SignUpSelection/SignUpSelection';
 
 function App(): JSX.Element {
   function goBack() {
@@ -34,6 +35,10 @@ function App(): JSX.Element {
 
           <Route path="/detailcard">
             <DetailDogCard />
+          </Route>
+
+          <Route path="/signupselection">
+            <SignUpSelection />
           </Route>
         </Switch>
       </BrowserRouter>
