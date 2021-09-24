@@ -24,7 +24,7 @@ export default function SignUpSelection(): JSX.Element {
       <Link to="/signup" className={styles.button}>
         <SubmitButton icon="arrowRight">Weiter</SubmitButton>
       </Link>
-      <Link to="/" className={styles.loginText}>
+      <Link to="/login" className={styles.loginText}>
         <p>
           <Typography size="s">
             Hast du bereits einen Account? <br />
