@@ -6,12 +6,10 @@ import ContactForm from './pages/ContactForm/ContactForm';
 import SettingsForm from './pages/SettingsForm/SettingsForm';
 import SearchForm from './pages/SearchForm/SearchForm';
 import BackButton from './components/BackButton/BackButton';
- mainPage
 import SignUpSelection from './pages/SignUpSelection/SignUpSelection';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import MainPage from './pages/MainPage/MainPage';
-
 
 function App(): JSX.Element {
   return (
@@ -50,6 +48,10 @@ function App(): JSX.Element {
           </Route>
 
           <Route path="/home">
+            <MainPage />
+          </Route>
+
+          <Route path="/">
             <MainPage />
           </Route>
         </Switch>
