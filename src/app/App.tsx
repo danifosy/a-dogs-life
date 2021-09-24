@@ -6,11 +6,9 @@ import ContactForm from './pages/ContactForm/ContactForm';
 import SettingsForm from './pages/SettingsForm/SettingsForm';
 import SearchForm from './pages/SearchForm/SearchForm';
 import BackButton from './components/BackButton/BackButton';
-loginPages
 import SignUpSelection from './pages/SignUpSelection/SignUpSelection';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import LoginPage from './pages/LoginPage/LoginPage';
-
 
 function App(): JSX.Element {
   return (
