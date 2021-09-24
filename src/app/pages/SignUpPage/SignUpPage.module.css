@@ -1,0 +1,17 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.5rem;
+  align-items: center;
+}
+
+.loginText {
+  text-align: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+}

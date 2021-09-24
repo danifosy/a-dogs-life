@@ -1,0 +1,41 @@
+.selection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 9rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  transition: 0.3;
+  color: var(--background-color);
+  background-color: var(--shadow-color);
+  margin-bottom: 1rem;
+}
+
+.label:hover,
+.label:focus-within {
+  background-color: var(--action-color);
+}
+
+.checkbox {
+  opacity: 0;
+  width: 0;
+}
+
+.loginText {
+  text-align: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+}

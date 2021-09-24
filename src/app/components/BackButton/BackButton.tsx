@@ -7,7 +7,11 @@ export default function BackButton(): JSX.Element {
     history.back();
   }
   return (
+mainPage
+    <button className={styles.icon} onClick={() => history.back()}>
+
     <button className={styles.icon} onClick={goBack}>
+
       <BackIcon />
     </button>
   );
