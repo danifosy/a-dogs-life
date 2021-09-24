@@ -8,9 +8,7 @@ export default function ContactForm(): JSX.Element {
   return (
     <main>
       <form className={styles.contactForm}>
-        <h2>
-          <Typography size="l">Kontaktanfrage</Typography>
-        </h2>
+        <Typography size="l">Kontaktanfrage</Typography>
         <TextInput inputType="text" id="name">
           Vor- und Nachname
         </TextInput>
