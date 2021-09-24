@@ -9,6 +9,7 @@ export default function LoginPage(): JSX.Element {
   return (
     <main className={styles.login}>
       <Typography size="l">Einloggen</Typography>
+
       <TextInput id="name" inputType="text">
         Name
       </TextInput>

@@ -13,8 +13,8 @@ const BurgerIcon = (props: React.SVGProps<SVGSVGElement>): JSX.Element => {
       <path
         d="M38 13H2M38 23H12M38 2L22 2"
         stroke="#DD6E8F"
-        stroke-width="4"
-        stroke-linecap="round"
+        strokeWidth="4"
+        strokeLinecap="round"
       />
     </svg>
   );

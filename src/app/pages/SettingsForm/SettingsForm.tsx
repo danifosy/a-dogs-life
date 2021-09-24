@@ -8,9 +8,7 @@ export default function SettingsForm(): JSX.Element {
   return (
     <main>
       <form className={styles.settings}>
-        <h2>
-          <Typography size="l">Einstellungen</Typography>
-        </h2>
+        <Typography size="l">Einstellungen</Typography>
         <TextInput inputType="text" id="new-name">
           Neuer Name
         </TextInput>
