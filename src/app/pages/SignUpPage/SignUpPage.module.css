@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+.loginText {
+  text-align: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 .button {
   text-decoration: none;
 }

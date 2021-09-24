@@ -3,7 +3,6 @@ import TextInput from '../../components/TextInput/TextInput';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import Typography from '../../components/Typography/Typography';
 import { Link } from 'react-router-dom';
-
 import styles from './SignUpPage.module.css';
 
 export default function SignUpPage(): JSX.Element {
@@ -28,12 +27,14 @@ export default function SignUpPage(): JSX.Element {
       <Link to="" className={styles.button}>
         <SubmitButton icon="signup">Anmelden</SubmitButton>
       </Link>
-      <p>
-        <Typography size="s">
-          Hast du bereits einen Account? <br />
-          Hier geht's zum Login.
-        </Typography>
-      </p>
+      <Link to="/login" className={styles.loginText}>
+        <p>
+          <Typography size="s">
+            Hast du bereits einen Account? <br />
+            Hier geht's zum Login.
+          </Typography>
+        </p>
+      </Link>
     </main>
   );
 }
