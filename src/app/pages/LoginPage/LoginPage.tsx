@@ -8,9 +8,7 @@ import styles from './LoginPage.module.css';
 export default function LoginPage(): JSX.Element {
   return (
     <main className={styles.login}>
-      <h2>
-        <Typography size="l">Einloggen</Typography>
-      </h2>
+      <Typography size="l">Einloggen</Typography>
       <TextInput id="name" inputType="text">
         Name
       </TextInput>
@@ -21,12 +19,10 @@ export default function LoginPage(): JSX.Element {
         <SubmitButton icon="signup">Einloggen</SubmitButton>
       </Link>
       <Link to="/signupselection" className={styles.signupLink}>
-        <p>
-          <Typography size="s">
-            Noch keinen Account? <br />
-            Hier anmelden!
-          </Typography>
-        </p>
+        <Typography size="s">
+          Noch keinen Account? <br />
+          Hier anmelden!
+        </Typography>
       </Link>
     </main>
   );

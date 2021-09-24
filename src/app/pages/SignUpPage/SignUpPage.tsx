@@ -8,9 +8,8 @@ import styles from './SignUpPage.module.css';
 export default function SignUpPage(): JSX.Element {
   return (
     <main className={styles.signup}>
-      <h2>
-        <Typography size="l">Anmeldung</Typography>
-      </h2>
+      <Typography size="l">Anmeldung</Typography>
+
       <TextInput id="name" inputType="text">
         Name
       </TextInput>
@@ -28,12 +27,10 @@ export default function SignUpPage(): JSX.Element {
         <SubmitButton icon="signup">Anmelden</SubmitButton>
       </Link>
       <Link to="/login" className={styles.loginText}>
-        <p>
-          <Typography size="s">
-            Hast du bereits einen Account? <br />
-            Hier geht's zum Login.
-          </Typography>
-        </p>
+        <Typography size="s">
+          Hast du bereits einen Account? <br />
+          Hier geht's zum Login.
+        </Typography>
       </Link>
     </main>
   );
