@@ -4,25 +4,24 @@ import styles from './SubmitButton.module.css';
 import Typography from '../Typography/Typography';
 
 type SubmitButtonProps = {
-  icon:
-    | 'arrowRight'
-    | 'camera'
-    | 'letter'
-    | 'safe'
-    | 'search'
-    | 'send'
-    | 'signup'
-    | 'upload';
+  // icon:
+  //   | 'arrowRight'
+  //   | 'camera'
+  //   | 'letter'
+  //   | 'safe'
+  //   | 'search'
+  //   | 'send'
+  //   | 'signup'
+  //   | 'upload';
   children: ReactNode;
 };
 
 export default function SubmitButton({
-  icon,
   children,
 }: SubmitButtonProps): JSX.Element {
   return (
     <button className={styles.submitButton}>
-      <img src={`../assets/SVGs/${icon}.svg`} className={styles.icon} />
+      {/* <img src={`../assets/SVGs/${icon}.svg`} className={styles.icon} /> */}
       <Typography size="s">{children}</Typography>
     </button>
   );
