@@ -1,0 +1,23 @@
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  margin: 0 1rem;
+  height: 75vh;
+}
+
+.loginText {
+  text-align: center;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.dogSVG {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
