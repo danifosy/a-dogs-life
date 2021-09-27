@@ -2,9 +2,9 @@ import React from 'react';
 import ImageCarousel from '../../components/ImageCarousel/ImageCarousel';
 import DetailCard from '../../components/DetailCard/DetailCard';
 import styles from './DetailDogCard.module.css';
-import MockImage1 from '../../assets/MockImages/Mino1.png';
-import MockImage2 from '../../assets/MockImages/Mino2.png';
-import MockImage3 from '../../assets/MockImages/Mino4.png';
+import MockImage1 from '../../../assets/MockImages/Mino1.png';
+import MockImage2 from '../../../assets/MockImages/Mino2.png';
+import MockImage3 from '../../../assets/MockImages/Mino4.png';
 
 const MockImageGallery = [MockImage1, MockImage2, MockImage3];
 

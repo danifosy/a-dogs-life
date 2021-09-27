@@ -6,10 +6,10 @@
 
 body {
   margin: 0;
-  background-image: url(./assets/BackgroundShapes/BGblue.png),
-    url(./assets/BackgroundShapes/BGpink.png),
-    url(./assets/BackgroundShapes/BGyellow1.png),
-    url(./assets/BackgroundShapes/BGyellow2.png);
+  background-image: url(../assets/BackgroundShapes/BGblue.png),
+    url(../assets/BackgroundShapes/BGpink.png),
+    url(../assets/BackgroundShapes/BGyellow1.png),
+    url(../assets/BackgroundShapes/BGyellow2.png);
   background-position: bottom 0 left 0, top 0 right 0, top 0 left 0,
     bottom 0 right 0;
   background-repeat: no-repeat;
@@ -22,8 +22,8 @@ body {
 
 @font-face {
   font-family: 'Roboto';
-  src: url(assets/fonts/Roboto/Roboto-Light.ttf);
-  src: url(assets/fonts/Roboto/Roboto-Medium.ttf);
+  src: url(../assets/fonts/Roboto/Roboto-Light.ttf);
+  src: url(../assets/fonts/Roboto/Roboto-Medium.ttf);
   font-weight: 300, 400, 500;
 }
 

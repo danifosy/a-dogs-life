@@ -23,7 +23,7 @@ export default function LandingPage(): JSX.Element {
           Hier geht's zum Login.
         </Typography>
       </Link>
-      <img src="src/app/assets/SVGs/dog.svg" className={styles.dogSVG} />
+      <img src="../assets/SVGs/dog.svg" className={styles.dogSVG} />
     </main>
   );
 }
