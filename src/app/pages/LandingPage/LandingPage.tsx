@@ -3,6 +3,7 @@ import Typography from '../../components/Typography/Typography';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import { Link } from 'react-router-dom';
 import styles from './LandingPage.module.css';
+import DogIcon from '../../../assets/Dog';
 
 export default function LandingPage(): JSX.Element {
   return (
@@ -23,7 +24,7 @@ export default function LandingPage(): JSX.Element {
           Hier geht's zum Login.
         </Typography>
       </Link>
-      <img src="../assets/SVGs/dog.svg" className={styles.dogSVG} />
+      <DogIcon className={styles.dogSVG} />
     </main>
   );
 }
