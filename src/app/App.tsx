@@ -10,6 +10,7 @@ import SignUpSelection from './pages/SignUpSelection/SignUpSelection';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import MainPage from './pages/MainPage/MainPage';
+import LandingPage from './pages/LandingPage/LandingPage';
 
 function App(): JSX.Element {
   return (
@@ -52,7 +53,7 @@ function App(): JSX.Element {
           </Route>
 
           <Route path="/">
-            <MainPage />
+            <LandingPage />
           </Route>
         </Switch>
       </BrowserRouter>
