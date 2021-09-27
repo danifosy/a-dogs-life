@@ -12,9 +12,9 @@ app.get('/api/hello', (_request, response) => {
   response.send('Hello API!');
 });
 
-app.get('*', (_request, response) => {
-  response.sendFile('index.html', { root: 'dist/app' });
-});
+// app.get('*', (_request, response) => {
+//   response.sendFile('index.html', { root: 'dist/app' });
+// });
 
 app.use('/storybook', express.static('dist/storybook'));
 
