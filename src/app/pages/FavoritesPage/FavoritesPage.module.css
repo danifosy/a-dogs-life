@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.dogCards {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem;
+  margin: 1rem;
+}
