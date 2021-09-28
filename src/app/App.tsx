@@ -12,6 +12,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import MainPage from './pages/MainPage/MainPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
+import MainPageARA from './pages/MainPageARA/MainPageARA';
 
 function App(): JSX.Element {
   return (
@@ -55,6 +56,10 @@ function App(): JSX.Element {
 
           <Route path="/home">
             <MainPage />
+          </Route>
+
+          <Route path="/homeARA">
+            <MainPageARA />
           </Route>
 
           <Route path="/">
