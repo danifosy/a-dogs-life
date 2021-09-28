@@ -11,9 +11,6 @@ export default function SignUpSelection(): JSX.Element {
 
       <Typography size="m">Ich melde mich an als</Typography>
 
-
-      <Typography size="m">Ich melde mich an als</Typography>
-
       <label className={styles.label}>
         <input type="checkbox" className={styles.checkbox} />
         <Typography size="s">Tierschützer*in</Typography>

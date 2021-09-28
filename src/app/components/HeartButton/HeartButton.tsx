@@ -1,5 +1,5 @@
 import React from 'react';
-import HeartIcon from '../../assets/HeartIcon';
+import HeartIcon from '../../../assets/HeartIcon';
 import styles from './HeartButton.module.css';
 
 export type HeartButtonProps = {
