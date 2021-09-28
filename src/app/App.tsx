@@ -11,6 +11,7 @@ import SignUpPage from './pages/SignUpPage/SignUpPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import MainPage from './pages/MainPage/MainPage';
 import LandingPage from './pages/LandingPage/LandingPage';
+import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
 
 function App(): JSX.Element {
   return (
@@ -46,6 +47,10 @@ function App(): JSX.Element {
 
           <Route path="/signupselection">
             <SignUpSelection />
+          </Route>
+
+          <Route path="/favorites">
+            <FavoritesPage />
           </Route>
 
           <Route path="/home">
