@@ -11,19 +11,13 @@ export default function MainPage(): JSX.Element {
       <Typography size="l">Hallo Vanessa!</Typography>
       <Typography size="s">Diese Hunde suchen noch...</Typography>
       <section className={styles.dogCards}>
-        <DogCard isLiked={true} image="/src/app/assets/MockImages/Mino3.png" />
+        <DogCard isLiked={true} image="src/assets/MockImages/Mino3.png" />
         <DogCard
           isLiked={false}
-          image="src/app/assets/MockImages/white_ger_sheperd.jpg"
+          image="src/assets/MockImages/white_ger_sheperd.jpg"
         />
-        <DogCard
-          isLiked={false}
-          image="src/app/assets/MockImages/dachshund.jpg"
-        />
-        <DogCard
-          isLiked={false}
-          image="src/app/assets/MockImages/brown_lab.jpg"
-        />
+        <DogCard isLiked={false} image="src/assets/MockImages/dachshund.jpg" />
+        <DogCard isLiked={false} image="src/assets/MockImages/brown_lab.jpg" />
       </section>
       <Link to="/search" className={styles.button}>
         <SubmitButton icon="search">Detailsuche</SubmitButton>

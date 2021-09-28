@@ -4,7 +4,7 @@ import Image from '../Image/Image';
 import styles from './DogCard.module.css';
 
 type DogCardProps = {
-  image: string | null;
+  image: string;
   isLiked: boolean;
 };
 
