@@ -23,7 +23,7 @@ export default function SignUpPage(): JSX.Element {
       <TextInput id="repeat_password" inputType="password">
         Passwort wiederholen
       </TextInput>
-      <Link to="" className={styles.button}>
+      <Link to="/home" className={styles.button}>
         <SubmitButton icon="signup">Anmelden</SubmitButton>
       </Link>
       <Link to="/login" className={styles.loginText}>
