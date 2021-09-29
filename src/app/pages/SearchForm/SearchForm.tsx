@@ -3,6 +3,7 @@ import Checkbox from '../../components/Checkbox/Checkbox';
 import RangeSlider from '../../components/RangeSlider/RangeSlider';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import Typography from '../../components/Typography/Typography';
+
 import styles from './SearchForm.module.css';
 
 export default function SearchForm(): JSX.Element {
@@ -25,11 +26,20 @@ export default function SearchForm(): JSX.Element {
 
         <Typography size="m">Gewicht</Typography>
 
-        <RangeSlider></RangeSlider>
+        <RangeSlider />
+        <div className={styles.rangeIdentifier}>
+          <Typography size="xs">unter 2kg</Typography>
+          <Typography size="xs">über 50 kg</Typography>
+        </div>
 
         <Typography size="m">Alter</Typography>
 
-        <RangeSlider></RangeSlider>
+        <RangeSlider />
+        <div className={styles.rangeIdentifier}>
+          <Typography size="xs">8 Wochen</Typography>
+          <Typography size="xs">10 Jahre +</Typography>
+        </div>
+
         <div className={styles.tolerate}>
           <Typography size="m">Verträgt sich mit:</Typography>
 

@@ -16,7 +16,13 @@ export default function TextInput({
 }: TextInputProps): JSX.Element {
   return (
     <div className={styles.inputField}>
-      <input id={id} type={inputType} required className={styles.input} />
+      <input
+        autoComplete="off"
+        id={id}
+        type={inputType}
+        required
+        className={styles.input}
+      />
       <label htmlFor={id} className={styles.label}>
         <span className={styles.labelContent}>
           <Typography size="s">{children}</Typography>

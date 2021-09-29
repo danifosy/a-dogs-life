@@ -7,9 +7,8 @@ import Typography from '../../components/Typography/Typography';
 export default function ContactForm(): JSX.Element {
   return (
     <main>
-      <form className={styles.contactForm}>
+      <form autoComplete="off" className={styles.contactForm}>
         <Typography size="l">Kontaktanfrage</Typography>
-
         <TextInput inputType="text" id="name">
           Vor- und Nachname
         </TextInput>
