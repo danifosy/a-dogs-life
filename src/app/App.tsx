@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import BurgerMenu from './pages/BurgerMenu/BurgerMenu';
 import DetailDogCard from './pages/DetailDogCard/DetailDogCard';
 import ContactForm from './pages/ContactForm/ContactForm';
@@ -13,6 +13,7 @@ import LandingPage from './pages/LandingPage/LandingPage';
 import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
 import MainPageARA from './pages/MainPageARA/MainPageARA';
 import UploadPage from './pages/UploadPage/UploadPage';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 export type UserType = 'ARA' | 'user';
 
@@ -96,25 +97,25 @@ function App(): JSX.Element {
 
       <BrowserRouter>
         <Switch>
-          <Route path="/contact">
+          <PrivateRoute path="/contact">
             <ContactForm />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/settings">
+          <PrivateRoute path="/settings">
             <SettingsForm />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/upload">
+          <PrivateRoute path="/upload">
             <UploadPage />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/search">
+          <PrivateRoute path="/search">
             <SearchForm />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/detailcard">
+          <PrivateRoute path="/detailcard">
             <DetailDogCard />
-          </Route>
+          </PrivateRoute>
 
           <Route path="/login">
             <LoginPage />
@@ -124,17 +125,17 @@ function App(): JSX.Element {
             <SignUpPage />
           </Route>
 
-          <Route path="/favorites">
+          <PrivateRoute path="/favorites">
             <FavoritesPage />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/home">
+          <PrivateRoute path="/home">
             <MainPage />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/homeARA">
+          <PrivateRoute path="/homeARA">
             <MainPageARA />
-          </Route>
+          </PrivateRoute>
 
           <Route path="/">
             <LandingPage />
