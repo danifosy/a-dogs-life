@@ -4,11 +4,14 @@ import DogCard from '../../components/DogCard/DogCard';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import styles from './MainPage.module.css';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../App';
 
 export default function MainPage(): JSX.Element {
+  const { state } = React.useContext(AuthContext);
+
   return (
     <main>
-      <Typography size="l">Hallo Vanessa!</Typography>
+      <Typography size="l">Hallo {state.userName}!</Typography>
       <Typography size="s">Diese Hunde suchen noch...</Typography>
       <section className={styles.dogCards}>
         <Link to="/detailcard">
