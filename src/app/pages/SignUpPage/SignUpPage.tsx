@@ -2,14 +2,28 @@ import React from 'react';
 import TextInput from '../../components/TextInput/TextInput';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import Typography from '../../components/Typography/Typography';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import styles from './SignUpPage.module.css';
+import type { UserType } from '../../App';
 import { AuthContext } from '../../App';
 
+interface FormElements extends HTMLFormControlsCollection {
+  userType: HTMLInputElement;
+  name: HTMLInputElement;
+  password: HTMLInputElement;
+  repeat_password: HTMLInputElement;
+}
+
+interface RegistrationFormElement extends HTMLFormElement {
+  readonly elements: FormElements;
+}
+
 export default function SignUpPage(): JSX.Element {
+  const history = useHistory();
+
   const { dispatch } = React.useContext(AuthContext);
 
-  const submit: React.FormEventHandler<HTMLFormElement> = (event) => {
+  const submit: React.FormEventHandler<RegistrationFormElement> = (event) => {
     event.preventDefault();
 
     // validate password == repeat_password
@@ -21,12 +35,13 @@ export default function SignUpPage(): JSX.Element {
     dispatch({
       type: 'LOGIN',
       payload: {
-        userName: event.target.name.value,
-        userType: event.target.userType.value,
+        userName: event.currentTarget.elements.name.value,
+        userType: event.currentTarget.elements.userType.value as UserType,
       },
     });
 
     // navigate to main home
+    history.push('/home');
 
     return true;
   };
