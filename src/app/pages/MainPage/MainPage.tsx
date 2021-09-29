@@ -11,7 +11,9 @@ export default function MainPage(): JSX.Element {
       <Typography size="l">Hallo Vanessa!</Typography>
       <Typography size="s">Diese Hunde suchen noch...</Typography>
       <section className={styles.dogCards}>
-        <DogCard isLiked={true} image="src/assets/MockImages/Mino3.png" />
+        <Link to="/detailcard">
+          <DogCard isLiked={true} image="src/assets/MockImages/Mino3.png" />
+        </Link>
         <DogCard
           isLiked={false}
           image="src/assets/MockImages/white_ger_sheperd.jpg"
