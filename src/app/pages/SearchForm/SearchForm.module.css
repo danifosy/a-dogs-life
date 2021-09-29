@@ -15,8 +15,7 @@
 
 .rangeIdentifier {
   display: flex;
-  align-content: space-around;
-  column-gap: 5rem;
+  column-gap: 7rem;
 }
 
 .neutered {
