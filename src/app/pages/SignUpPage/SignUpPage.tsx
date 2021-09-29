@@ -4,11 +4,59 @@ import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import Typography from '../../components/Typography/Typography';
 import { Link } from 'react-router-dom';
 import styles from './SignUpPage.module.css';
+import { AuthContext } from '../../App';
 
 export default function SignUpPage(): JSX.Element {
+  const { dispatch } = React.useContext(AuthContext);
+
+  const submit: React.FormEventHandler<HTMLFormElement> = (event) => {
+    event.preventDefault();
+
+    // validate password == repeat_password
+    // ...
+
+    // set isAuthenticated = true
+    // set userType = ...
+
+    dispatch({
+      type: 'LOGIN',
+      payload: {
+        userName: event.target.name.value,
+        userType: event.target.userType.value,
+      },
+    });
+
+    // navigate to main home
+
+    return true;
+  };
+
   return (
-    <main className={styles.signup}>
+    <form className={styles.signup} onSubmit={submit}>
       <Typography size="l">Anmeldung</Typography>
+      <Typography size="m">Ich melde mich an als</Typography>
+
+      <label htmlFor="ARA" className={styles.label}>
+        <input
+          type="radio"
+          name="userType"
+          value="ARA"
+          id="ARA"
+          className={styles.checkbox}
+        />
+        <Typography size="s">Tierschützer*in</Typography>
+      </label>
+      <label htmlFor="user" className={styles.label}>
+        <input
+          defaultChecked={true}
+          type="radio"
+          name="userType"
+          value="user"
+          id="user"
+          className={styles.checkbox}
+        />
+        <Typography size="s">Interessent</Typography>
+      </label>
 
       <TextInput id="name" inputType="text">
         Name
@@ -23,15 +71,15 @@ export default function SignUpPage(): JSX.Element {
       <TextInput id="repeat_password" inputType="password">
         Passwort wiederholen
       </TextInput>
-      <Link to="/home" className={styles.button}>
+      <div className={styles.button}>
         <SubmitButton icon="signup">Anmelden</SubmitButton>
-      </Link>
+      </div>
       <Link to="/login" className={styles.loginText}>
         <Typography size="s">
           Hast du bereits einen Account? <br />
           Hier geht's zum Login.
         </Typography>
       </Link>
-    </main>
+    </form>
   );
 }
