@@ -16,7 +16,7 @@ export default function BurgerMenu(): JSX.Element {
 
   const logout: MouseEventHandler = (event) => {
     event.preventDefault();
-    dispatch({ type: 'LOGOUT', payload: {} });
+    dispatch({ type: 'LOGOUT' });
     setOpened(false);
     return true;
   };
