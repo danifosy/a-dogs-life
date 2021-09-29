@@ -1,0 +1,44 @@
+.weight {
+  display: flex;
+}
+
+.age {
+  display: flex;
+}
+
+.neutered {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.sex {
+  display: flex;
+  justify-content: space-around;
+  align-self: stretch;
+}
+
+.tolerance {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.7rem;
+  align-self: start;
+  margin: 1rem;
+}
+
+input[type='number'] {
+  width: 5rem;
+  height: 1.7rem;
+  font-size: 1.5rem;
+  border: none;
+  margin: 0 1rem;
+  border-bottom: solid 0.15rem var(--shadow-color);
+}
+
+input[type='number']:hover {
+  box-shadow: none;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 1rem;
+}
