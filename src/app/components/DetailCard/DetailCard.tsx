@@ -4,6 +4,7 @@ import HeartButton from '../HeartButton/HeartButton';
 import Typography from '../Typography/Typography';
 import SubmitButton from '../SubmitButton/SubmitButton';
 import { Link } from 'react-router-dom';
+import GenderMaleIcon from '../../../assets/GenderMale';
 
 type DetailCardProps = {
   name: string;
@@ -27,10 +28,7 @@ export default function DetailCard({
         isActive={true}
         className={styles.heartIcon}
       />
-      <img
-        src="src/app/assets/SVGs/genderMale.svg"
-        className={styles.genderIcon}
-      />
+      <GenderMaleIcon className={styles.genderIcon} />
       <p className={styles.dogName}>
         <Typography size="m">{name}</Typography>
       </p>
