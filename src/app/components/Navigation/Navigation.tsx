@@ -5,6 +5,7 @@ import Typography from '../Typography/Typography';
 
 export type NavigationProps = {
   link?: string;
+  onClick?: React.MouseEventHandler;
   children: ReactNode;
 };
 

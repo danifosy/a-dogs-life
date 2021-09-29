@@ -1,4 +1,6 @@
+import type { MouseEventHandler } from 'react';
 import React, { useState } from 'react';
+import { AuthContext } from '../../App';
 import BurgerButton from '../../components/BurgerButton/BurgerButton';
 import BurgerButtonMenu from '../../components/BurgerButtonMenu/BurgerButtonMenu';
 import styles from './BurgerMenu.module.css';
@@ -9,6 +11,15 @@ export default function BurgerMenu(): JSX.Element {
   function handleOpened() {
     setOpened(!opened);
   }
+
+  const { dispatch } = React.useContext(AuthContext);
+
+  const logout: MouseEventHandler = (event) => {
+    event.preventDefault();
+    dispatch({ type: 'LOGOUT', payload: {} });
+    setOpened(false);
+    return true;
+  };
 
   return (
     <>
@@ -21,7 +32,9 @@ export default function BurgerMenu(): JSX.Element {
           <BurgerButtonMenu link="/search">Suche</BurgerButtonMenu>
           <BurgerButtonMenu link="/favorites">Favoriten</BurgerButtonMenu>
           <BurgerButtonMenu link="/settings">Einstellungen</BurgerButtonMenu>
-          <BurgerButtonMenu link="">Ausloggen</BurgerButtonMenu>
+          <BurgerButtonMenu link="" onClick={logout}>
+            Ausloggen
+          </BurgerButtonMenu>
         </div>
       )}
     </>
