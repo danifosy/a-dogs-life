@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import BurgerMenu from './pages/BurgerMenu/BurgerMenu';
 import DetailDogCard from './pages/DetailDogCard/DetailDogCard';
 import ContactForm from './pages/ContactForm/ContactForm';
@@ -23,10 +23,19 @@ export type StateType = {
   userType?: UserType;
 };
 
-export type ActionType = {
-  type: string;
-  payload: any;
+type LoginActionType = {
+  type: 'LOGIN';
+  payload: {
+    userName: string;
+    userType: UserType;
+  };
 };
+
+type LogoutActionType = {
+  type: 'LOGOUT';
+};
+
+export type ActionType = LoginActionType | LogoutActionType;
 
 export type AuthContextType = {
   state: StateType;
