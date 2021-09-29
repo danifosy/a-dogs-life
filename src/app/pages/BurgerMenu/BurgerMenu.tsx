@@ -21,6 +21,7 @@ export default function BurgerMenu(): JSX.Element {
           <BurgerButtonMenu link="/search">Suche</BurgerButtonMenu>
           <BurgerButtonMenu link="/favorites">Favoriten</BurgerButtonMenu>
           <BurgerButtonMenu link="/settings">Einstellungen</BurgerButtonMenu>
+          <BurgerButtonMenu link="">Ausloggen</BurgerButtonMenu>
         </div>
       )}
     </>

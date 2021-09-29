@@ -13,6 +13,7 @@ import MainPage from './pages/MainPage/MainPage';
 import LandingPage from './pages/LandingPage/LandingPage';
 import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
 import MainPageARA from './pages/MainPageARA/MainPageARA';
+import UploadPage from './pages/UploadPage/UploadPage';
 
 function App(): JSX.Element {
   return (
@@ -28,6 +29,10 @@ function App(): JSX.Element {
 
           <Route path="/settings">
             <SettingsForm />
+          </Route>
+
+          <Route path="/upload">
+            <UploadPage />
           </Route>
 
           <Route path="/search">
