@@ -8,7 +8,7 @@ export default function PrivateRoute({
   ...rest
 }: {
   children: ReactNode;
-  [key: string]: any;
+  [key: string]: unknown;
 }): JSX.Element {
   const { state } = React.useContext(AuthContext);
 
