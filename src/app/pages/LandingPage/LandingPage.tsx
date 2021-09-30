@@ -15,7 +15,7 @@ export default function LandingPage(): JSX.Element {
         Ansprüche zu finden, damit ihr zusammen viele schöne Stunden verbringen
         könnt.
       </Typography>
-      <Link to="/signupselection" className={styles.button}>
+      <Link to="/signup" className={styles.button}>
         <SubmitButton icon="signup">Anmelden</SubmitButton>
       </Link>
       <Link to="/login" className={styles.loginText}>
