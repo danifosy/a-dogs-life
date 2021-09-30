@@ -34,7 +34,8 @@
   border-color: var(--action-color);
 }
 
-.input:focus + .label .labelContent {
+.input:focus + .label .labelContent,
+.input:valid + .label .labelContent {
   transform: translateY(-90%);
   transition: 0.3s ease;
   color: var(--action-color);
