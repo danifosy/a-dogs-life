@@ -30,7 +30,7 @@ export default function SignUpPage(): JSX.Element {
     // ...
 
     // set isAuthenticated = true
-    // set userType = ...
+    // set userType = ...'''''''''
 
     dispatch({
       type: 'LOGIN',
@@ -57,7 +57,7 @@ export default function SignUpPage(): JSX.Element {
           name="userType"
           value="ARA"
           id="ARA"
-          className={styles.checkbox}
+          className={styles.radioButton}
         />
         <Typography size="s">Tierschützer*in</Typography>
       </label>
@@ -68,7 +68,7 @@ export default function SignUpPage(): JSX.Element {
           name="userType"
           value="user"
           id="user"
-          className={styles.checkbox}
+          className={styles.radioButton}
         />
         <Typography size="s">Interessent</Typography>
       </label>
