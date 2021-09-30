@@ -15,7 +15,7 @@ export default function MainPage(): JSX.Element {
       <Typography size="s">Diese Hunde suchen noch...</Typography>
       <section className={styles.dogCards}>
         <Link to="/detailcard">
-          <DogCard isLiked={true} image="src/assets/MockImages/Mino3.png" />
+          <DogCard isLiked={true} image="src/assets/MockImages/Mino3.jpg" />
         </Link>
         <DogCard
           isLiked={false}
