@@ -21,3 +21,12 @@
   bottom: 0;
   left: 0;
 }
+
+@media (max-width: 375px) {
+  .landingPage {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    height: 60vh;
+  }
+}
