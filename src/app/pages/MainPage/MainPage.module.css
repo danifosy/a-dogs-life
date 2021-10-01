@@ -16,3 +16,16 @@ main {
 .button {
   text-decoration: none;
 }
+
+@media (max-width: 375px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    row-gap: 0.5rem;
+  }
+
+  .dogCards {
+    margin: 0.5rem;
+  }
+}
