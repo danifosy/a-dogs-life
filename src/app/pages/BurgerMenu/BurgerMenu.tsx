@@ -1,6 +1,6 @@
 import type { MouseEventHandler } from 'react';
 import React, { useState } from 'react';
-import { AuthContext } from '../../App';
+import { AuthContext } from '../../../utils/signup';
 import BurgerButton from '../../components/BurgerButton/BurgerButton';
 import BurgerButtonMenu from '../../components/BurgerButtonMenu/BurgerButtonMenu';
 import styles from './BurgerMenu.module.css';

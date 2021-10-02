@@ -17,7 +17,7 @@ main {
   text-decoration: none;
 }
 
-@media (max-width: 375px) {
+@media (max-height: 667px) {
   .main {
     display: flex;
     flex-direction: column;

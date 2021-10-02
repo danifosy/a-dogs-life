@@ -22,7 +22,7 @@
   left: 0;
 }
 
-@media (max-width: 375px) {
+@media (max-height: 667px) {
   .landingPage {
     display: flex;
     flex-direction: column;

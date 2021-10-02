@@ -13,7 +13,7 @@
   width: 10rem;
   border-radius: 1rem;
 }
-@media (max-width: 375px) {
+@media (max-height: 667px) {
   .card {
     width: 8rem;
     position: relative;

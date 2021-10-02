@@ -4,8 +4,8 @@ import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import Typography from '../../components/Typography/Typography';
 import { Link, useHistory } from 'react-router-dom';
 import styles from './SignUpPage.module.css';
-import type { UserType } from '../../App';
-import { AuthContext } from '../../App';
+import type { UserType } from '../../../utils/signup';
+import { AuthContext } from '../../../utils/signup';
 
 interface FormElements extends HTMLFormControlsCollection {
   userType: HTMLInputElement;

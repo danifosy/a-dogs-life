@@ -43,7 +43,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 375px) {
+@media (max-height: 667px) {
   .signup {
     display: flex;
     flex-direction: column;
