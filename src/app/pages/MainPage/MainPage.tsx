@@ -4,7 +4,7 @@ import DogCard from '../../components/DogCard/DogCard';
 import SubmitButton from '../../components/SubmitButton/SubmitButton';
 import styles from './MainPage.module.css';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../../App';
+import { AuthContext } from '../../../utils/signup';
 
 export default function MainPage(): JSX.Element {
   const { state } = React.useContext(AuthContext);

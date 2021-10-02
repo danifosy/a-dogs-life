@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
-import { AuthContext } from '../../App';
+import { AuthContext } from '../../../utils/signup';
 import type { ReactNode } from 'react';
 
 export default function PrivateRoute({
